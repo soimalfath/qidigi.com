@@ -1,4 +1,5 @@
-import { Navbar, Hero, WhatWeDo } from '@/components/landingPage';
+'use client';
+import { Navbar, Hero, WhatWeDo } from '@/pages/landingPage';
 
 export default function Home() {
   return (
