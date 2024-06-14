@@ -5,11 +5,14 @@ import {
   SoundOutlined,
 } from '@ant-design/icons';
 import { DataCard } from '@/types/landingPage/landingPage';
+import { ilustrationWhatWeDo } from '@/config/landingPage/image';
+import Image from 'next/image';
+
 export const WhatWeDo = () => {
   const dataCardWhatWeDo: DataCard[] = [
     {
       icon: <LineChartOutlined className="text-3xl" />,
-      title: 'Strategi Pertumbuhan Digital',
+      title: 'Membuat Strategi Pertumbuhan Digital',
       content:
         'Kami membantu Anda mengembangkan strategi digital yang komprehensif untuk mencapai target bisnis Anda. Dari analisis pasar hingga implementasi, kami memastikan setiap langkah Anda membawa hasil yang nyata.',
     },
@@ -23,12 +26,12 @@ export const WhatWeDo = () => {
       icon: <SoundOutlined className="text-3xl" />,
       title: 'Digital Marketing yang Efektif',
       content:
-        ' Dari Google Ads hingga Meta Ads, kami merancang dan menjalankan kampanye iklan yang ditargetkan untuk memaksimalkan ROI. Kami menggunakan data dan analisis untuk memastikan iklan Anda mencapai audiens yang tepat.',
+        ' Dari Google Ads, Tiktok Ads, Marketplace hingga Meta Ads, kami merancang dan menjalankan kampanye iklan yang ditargetkan untuk memaksimalkan ROI. Kami menggunakan data dan analisis untuk memastikan iklan Anda mencapai audiens yang tepat.',
     },
   ];
 
   return (
-    <section>
+    <section className="lg:py-20">
       <div className="w-full  flex justify-center">
         <div className="w-11/12 py-5">
           <div className="py-3">
@@ -36,7 +39,8 @@ export const WhatWeDo = () => {
               Apa yang Kami Lakukan
             </div>
             <div className="lg:text-3xl text-lg mt-2 font-bold">
-              Solusi Digital Terintegrasi <br /> untuk Kebutuhan Bisnis Kamu
+              Kami Memberikan Solusi Inovatif <br /> untuk Pertumbuhan Bisnis
+              Kamu
             </div>
           </div>
           <div className="lg:py-9">
@@ -55,6 +59,30 @@ export const WhatWeDo = () => {
                 </Col>
               ))}
             </Row>
+          </div>
+          <div className="flex py-9 justify-center">
+            <div className="lg:flex lg:justify-evenly grid grid-cols-4">
+              {ilustrationWhatWeDo.map((item, index) => (
+                <div
+                  className={
+                    index === 3
+                      ? 'lg:border-r-0  lg:ml-4 lg:p-8'
+                      : 'lg:border-r  lg:p-8 lg:ml-4'
+                  }
+                  key={index}
+                >
+                  <div className="flex justify-center">
+                    <Image src={item.src} alt={item.alt}></Image>
+                  </div>
+                  <div className="text-center text-sm font-semibold py-2">
+                    {item.caption}
+                  </div>
+                  <div className="text-[#20B15A] text-center lg:text-4xl text-2xl font-semibold">
+                    {item.number}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
