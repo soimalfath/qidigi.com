@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Qidigi',
+  title: 'Qidigi - Solusi Murah Dan Mudah Untuk Boost Bisnis kamu',
   description: 'Solusi Web Development dan Digital Marketing',
 };
 

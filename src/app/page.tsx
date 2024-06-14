@@ -1,5 +1,13 @@
 'use client';
-import { Navbar, Hero, WhatWeDo, Service } from '@/components/landingPage';
+import {
+  Navbar,
+  Hero,
+  WhatWeDo,
+  Service,
+  Pricing,
+  Testinoni,
+  Footer,
+} from '@/components/landingPage';
 
 export default function Home() {
   return (
@@ -8,6 +16,9 @@ export default function Home() {
       <Hero />
       <WhatWeDo />
       <Service />
+      <Pricing />
+      <Testinoni />
+      <Footer />
     </>
   );
 }
