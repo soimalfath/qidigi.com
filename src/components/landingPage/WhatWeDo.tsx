@@ -74,7 +74,7 @@ export const WhatWeDo = () => {
                   <div className="flex justify-center">
                     <Image src={item.src} alt={item.alt}></Image>
                   </div>
-                  <div className="text-center text-xs lg:text-sm font-semibold py-2">
+                  <div className="text-center lg:h-auto h-12 text-xs lg:text-sm font-semibold py-2">
                     {item.caption}
                   </div>
                   <div className="text-[#20B15A] text-center lg:text-4xl text-2xl font-semibold">
