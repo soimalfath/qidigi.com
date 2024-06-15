@@ -60,7 +60,7 @@ export const WhatWeDo = () => {
               ))}
             </Row>
           </div>
-          <div className="flex py-9 justify-center">
+          <div className="flex py-12 justify-center">
             <div className="lg:flex lg:justify-evenly grid grid-cols-4">
               {ilustrationWhatWeDo.map((item, index) => (
                 <div
