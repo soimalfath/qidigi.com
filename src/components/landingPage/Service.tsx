@@ -35,13 +35,39 @@ const Service = () => {
                 </Card>
               </Col>
               <Col span={8}>
-                <Card title="Card title" hoverable bordered={true}>
-                  Card content
+                <Card hoverable bordered={true}>
+                  <div>Pengembangan Website</div>
+                  <div>
+                    Membangun situs web yang menarik, responsif, dan
+                    dioptimalkan untuk pengalaman pengguna yang luar biasa.
+                  </div>
+                  <div className="grid">
+                    <span>
+                      - Desain dan pengembangan situs web kustom Pengembangan
+                    </span>
+                    <span>
+                      - e-commerce Optimasi kecepatan dan performa situs
+                    </span>
+                    <span>- Pemeliharaan dan dukungan berkelanjutan</span>
+                  </div>
                 </Card>
               </Col>
               <Col span={8}>
-                <Card title="Card title" hoverable bordered={true}>
-                  Card content
+                <Card hoverable bordered={true}>
+                  <div>Pengembangan Website</div>
+                  <div>
+                    Membangun situs web yang menarik, responsif, dan
+                    dioptimalkan untuk pengalaman pengguna yang luar biasa.
+                  </div>
+                  <div className="grid">
+                    <span>
+                      - Desain dan pengembangan situs web kustom Pengembangan
+                    </span>
+                    <span>
+                      - e-commerce Optimasi kecepatan dan performa situs
+                    </span>
+                    <span>- Pemeliharaan dan dukungan berkelanjutan</span>
+                  </div>
                 </Card>
               </Col>
             </Row>

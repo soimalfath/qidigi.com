@@ -1,3 +1,4 @@
+import { Card, Carousel } from 'antd';
 const Testimoni = () => {
   return (
     <section>
@@ -12,6 +13,20 @@ const Testimoni = () => {
               Kamu
             </div>
           </div>
+          <Carousel autoplay>
+            <Card title="Card title" bordered={false}>
+              Card content
+            </Card>
+            <Card title="Card title" bordered={false}>
+              Card content
+            </Card>
+            <Card title="Card title" bordered={false}>
+              Card content
+            </Card>
+            <Card title="Card title" bordered={false}>
+              Card content
+            </Card>
+          </Carousel>
         </div>
       </div>
     </section>
