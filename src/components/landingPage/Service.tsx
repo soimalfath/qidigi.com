@@ -16,7 +16,7 @@ const Service = () => {
           </div>
           <div className="py-9">
             <Row gutter={16}>
-              <Col span={8}>
+              <Col md={8} xs={24}>
                 <Card hoverable bordered={true}>
                   <div>Pengembangan Website</div>
                   <div>
@@ -34,7 +34,7 @@ const Service = () => {
                   </div>
                 </Card>
               </Col>
-              <Col span={8}>
+              <Col md={8} xs={24}>
                 <Card hoverable bordered={true}>
                   <div>Pengembangan Website</div>
                   <div>
@@ -52,7 +52,7 @@ const Service = () => {
                   </div>
                 </Card>
               </Col>
-              <Col span={8}>
+              <Col md={8} xs={24}>
                 <Card hoverable bordered={true}>
                   <div>Pengembangan Website</div>
                   <div>
