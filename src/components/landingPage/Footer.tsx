@@ -22,7 +22,7 @@ const Footer = () => {
                 <span>
                   <EnvironmentOutlined />
                 </span>
-                <span>Tamansari, Purbalingga, Jawa Tengah</span>
+                <span> Purbalingga, Jawa Tengah</span>
               </div>
               <div className="text-white my-2 flex gap-2 text-sm lg:text-base">
                 <span>

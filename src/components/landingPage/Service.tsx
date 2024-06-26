@@ -5,14 +5,14 @@ import { CardServices } from '@/config/landingPage/cardService';
 
 const Service = () => {
   return (
-    <section className="lg:py-20">
+    <section>
       <div className="w-full  flex justify-center">
         <div className="w-11/12">
           <div className="py-3">
-            <div className="lg:text-sm text-xs uppercase font-semibold text-[#20B15A]">
+            <div className="lg:text-sm text-center md:text-left text-xs uppercase font-semibold text-[#20B15A]">
               Apa saja layanan kami
             </div>
-            <div className="lg:text-3xl text-lg mt-2 font-bold">
+            <div className="lg:text-3xl text-center md:text-left text-lg mt-2 font-bold">
               Kami menyediakan Solusi Digital <br /> Terpadu untuk Pertumbuhan
               Bisnis Kamu
             </div>
@@ -20,7 +20,7 @@ const Service = () => {
           <div className="py-9">
             <Row gutter={16}>
               {CardServices.map((item, index) => (
-                <Col key={index} md={6} xs={24}>
+                <Col className="my-2 md:my-0" key={index} md={6} xs={24}>
                   <Card hoverable bordered={true}>
                     <div className="flex p-5 justify-center">
                       <Image width={200} alt={item.alt} src={item.img}></Image>
@@ -28,9 +28,11 @@ const Service = () => {
                     <div className="text-lg font-semibold text-center">
                       {item.tittle}
                     </div>
-                    <div className="text-center my-3">{item.content}</div>
+                    <div className="text-center h-28 my-3">{item.content}</div>
                     <div className="grid">
-                      <Button>Selengkapnya</Button>
+                      <Button href="https://wa.me/628158931112" target="_blank">
+                        Hubungi Kami
+                      </Button>
                     </div>
                   </Card>
                 </Col>
