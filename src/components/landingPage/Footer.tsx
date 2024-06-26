@@ -40,7 +40,7 @@ const Footer = () => {
                 </span>
                 <span>
                   <Link target="_blank" href="mailto:qibatdigital@gmail.com">
-                    qibatdigital@gmail.com
+                    qiblatdigital@gmail.com
                   </Link>
                 </span>
               </div>

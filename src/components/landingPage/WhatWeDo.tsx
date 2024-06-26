@@ -3,6 +3,9 @@ import {
   LineChartOutlined,
   GlobalOutlined,
   SoundOutlined,
+  FileSearchOutlined,
+  DatabaseOutlined,
+  MessageOutlined,
 } from '@ant-design/icons';
 import { DataCard } from '@/types/landingPage/landingPage';
 import { ilustrationWhatWeDo } from '@/config/landingPage/image';
@@ -27,6 +30,24 @@ export const WhatWeDo = () => {
       title: 'Digital Marketing yang Efektif',
       content:
         ' Dari Google Ads, Tiktok Ads, Marketplace hingga Meta Ads, kami merancang dan menjalankan kampanye iklan yang ditargetkan untuk memaksimalkan ROI. Kami menggunakan data dan analisis untuk memastikan iklan Anda mencapai audiens yang tepat.',
+    },
+    {
+      icon: <FileSearchOutlined className="text-3xl" />,
+      title: 'Optimasi Mesin Pencari (SEO)',
+      content:
+        'Kami mengoptimalkan situs web Anda untuk mesin pencari guna meningkatkan peringkat dan mendatangkan traffic organik berkualitas tinggi, memastikan bisnis Anda mudah ditemukan oleh calon pelanggan.',
+    },
+    {
+      icon: <MessageOutlined className="text-3xl" />,
+      title: 'Manajemen Media Sosial yang Profesional',
+      content:
+        'Kami mengelola kehadiran Anda di media sosial, menciptakan konten yang menarik dan strategi yang efektif untuk meningkatkan engagement dan membangun komunitas yang loyal',
+    },
+    {
+      icon: <DatabaseOutlined className="text-3xl" />,
+      title: 'Pelaporan dan Analisis Kinerja',
+      content:
+        ' Kami menyediakan laporan kinerja yang komprehensif dan mudah dipahami, memungkinkan Anda untuk memantau kemajuan, mengambil keputusan berdasarkan data, dan mengoptimalkan strategi untuk hasil yang lebih baik.',
     },
   ];
 

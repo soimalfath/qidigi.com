@@ -1,4 +1,7 @@
-import { Row, Card, Col } from 'antd';
+import { Row, Card, Col, Button } from 'antd';
+import Image from 'next/image';
+import IlusWebService from '@/assets/landingpage/ilustration/web-design.png';
+import { CardServices } from '@/config/landingPage/cardService';
 
 const Service = () => {
   return (
@@ -16,60 +19,22 @@ const Service = () => {
           </div>
           <div className="py-9">
             <Row gutter={16}>
-              <Col md={8} xs={24}>
-                <Card hoverable bordered={true}>
-                  <div>Pengembangan Website</div>
-                  <div>
-                    Membangun situs web yang menarik, responsif, dan
-                    dioptimalkan untuk pengalaman pengguna yang luar biasa.
-                  </div>
-                  <div className="grid">
-                    <span>
-                      - Desain dan pengembangan situs web kustom Pengembangan
-                    </span>
-                    <span>
-                      - e-commerce Optimasi kecepatan dan performa situs
-                    </span>
-                    <span>- Pemeliharaan dan dukungan berkelanjutan</span>
-                  </div>
-                </Card>
-              </Col>
-              <Col md={8} xs={24}>
-                <Card hoverable bordered={true}>
-                  <div>Pengembangan Website</div>
-                  <div>
-                    Membangun situs web yang menarik, responsif, dan
-                    dioptimalkan untuk pengalaman pengguna yang luar biasa.
-                  </div>
-                  <div className="grid">
-                    <span>
-                      - Desain dan pengembangan situs web kustom Pengembangan
-                    </span>
-                    <span>
-                      - e-commerce Optimasi kecepatan dan performa situs
-                    </span>
-                    <span>- Pemeliharaan dan dukungan berkelanjutan</span>
-                  </div>
-                </Card>
-              </Col>
-              <Col md={8} xs={24}>
-                <Card hoverable bordered={true}>
-                  <div>Pengembangan Website</div>
-                  <div>
-                    Membangun situs web yang menarik, responsif, dan
-                    dioptimalkan untuk pengalaman pengguna yang luar biasa.
-                  </div>
-                  <div className="grid">
-                    <span>
-                      - Desain dan pengembangan situs web kustom Pengembangan
-                    </span>
-                    <span>
-                      - e-commerce Optimasi kecepatan dan performa situs
-                    </span>
-                    <span>- Pemeliharaan dan dukungan berkelanjutan</span>
-                  </div>
-                </Card>
-              </Col>
+              {CardServices.map((item, index) => (
+                <Col key={index} md={6} xs={24}>
+                  <Card hoverable bordered={true}>
+                    <div className="flex p-5 justify-center">
+                      <Image width={200} alt={item.alt} src={item.img}></Image>
+                    </div>
+                    <div className="text-lg font-semibold text-center">
+                      {item.tittle}
+                    </div>
+                    <div className="text-center my-3">{item.content}</div>
+                    <div className="grid">
+                      <Button>Selengkapnya</Button>
+                    </div>
+                  </Card>
+                </Col>
+              ))}
             </Row>
           </div>
         </div>
