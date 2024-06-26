@@ -5,11 +5,12 @@ import logoTiktok from '@/assets/landingpage/logo-brand/tik-tok.png';
 import logoReact from '@/assets/landingpage/logo-brand/physics.png';
 import logoVue from '@/assets/landingpage/logo-brand/document.png';
 import logoNest from '@/assets/landingpage/logo-brand/nestjs.svg';
-import { ImageHero, IlustWhatWeDO } from '@/types/landingPage/landingPage';
 import ilusCompleteProject from '@/assets/landingpage/ilustration/complete-project.svg';
 import ilusCustomer from '@/assets/landingpage/ilustration/customer.svg';
 import ilusExperience from '@/assets/landingpage/ilustration/experience.svg';
 import ilusOmsetCust from '@/assets/landingpage/ilustration/omset-client.svg';
+
+import { ImageHero, IlustWhatWeDO } from '@/types/landingPage/landingPage';
 
 export default heroImage;
 
